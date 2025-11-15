@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ThiepCuoi/static/css/main.50f18475.css",
+    "main.css": "/ThiepCuoi/static/css/main.af2cad8b.css",
     "main.js": "/ThiepCuoi/static/js/main.dd390075.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
     "static/media/gif.gif": "/ThiepCuoi/static/media/gif.d2d231d8b86b533b4db0.gif",
@@ -8,12 +8,12 @@
     "static/media/bg.jpg": "/ThiepCuoi/static/media/bg.75670f117e042295c3d3.jpg",
     "static/media/borderTopLeft.png": "/ThiepCuoi/static/media/borderTopLeft.0444f363ab5992a5e6ef.png",
     "index.html": "/ThiepCuoi/index.html",
-    "main.50f18475.css.map": "/ThiepCuoi/static/css/main.50f18475.css.map",
+    "main.af2cad8b.css.map": "/ThiepCuoi/static/css/main.af2cad8b.css.map",
     "main.dd390075.js.map": "/ThiepCuoi/static/js/main.dd390075.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50f18475.css",
+    "static/css/main.af2cad8b.css",
     "static/js/main.dd390075.js"
   ]
 }
