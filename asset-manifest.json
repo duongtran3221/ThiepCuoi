@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/ThiepCuoi/static/css/main.b77f2002.css",
-    "main.js": "/ThiepCuoi/static/js/main.dd390075.js",
+    "main.css": "/ThiepCuoi/static/css/main.034cb112.css",
+    "main.js": "/ThiepCuoi/static/js/main.f40a7d76.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
+    "static/media/ido.mp3": "/ThiepCuoi/static/media/ido.e631ab641675ed70db72.mp3",
     "static/media/gif.gif": "/ThiepCuoi/static/media/gif.d2d231d8b86b533b4db0.gif",
     "static/media/logo-wedding.png": "/ThiepCuoi/static/media/logo-wedding.2072d2b59cb8aa1a3a00.png",
     "static/media/bg.jpg": "/ThiepCuoi/static/media/bg.75670f117e042295c3d3.jpg",
     "static/media/borderTopLeft.png": "/ThiepCuoi/static/media/borderTopLeft.0444f363ab5992a5e6ef.png",
     "index.html": "/ThiepCuoi/index.html",
-    "main.b77f2002.css.map": "/ThiepCuoi/static/css/main.b77f2002.css.map",
-    "main.dd390075.js.map": "/ThiepCuoi/static/js/main.dd390075.js.map",
+    "main.034cb112.css.map": "/ThiepCuoi/static/css/main.034cb112.css.map",
+    "main.f40a7d76.js.map": "/ThiepCuoi/static/js/main.f40a7d76.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b77f2002.css",
-    "static/js/main.dd390075.js"
+    "static/css/main.034cb112.css",
+    "static/js/main.f40a7d76.js"
   ]
 }
