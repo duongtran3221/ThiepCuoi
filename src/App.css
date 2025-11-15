@@ -1,38 +1,453 @@
+/* App.css */
 .App {
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  width: 100%;
+  background: linear-gradient(135deg, #fff5f5 0%, #fff 50%, #fff5f5 100%);
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Hiệu ứng nền hoa */
+.content::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(rgba(245, 98, 122, 0.1) 2px, transparent 2px),
+    radial-gradient(rgba(255, 153, 170, 0.1) 2px, transparent 2px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  z-index: -1;
+}
+
+/* Hiệu ứng cho text khi mới vào */
+.text-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: textReveal 1s ease forwards;
+}
+
+@keyframes textReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Hiệu ứng delay cho các phần tử */
+.text-reveal-delay-1 { animation-delay: 0.6s; }
+.text-reveal-delay-2 { animation-delay: 0.9s; }
+.text-reveal-delay-3 { animation-delay: 1.2s; }
+.text-reveal-delay-4 { animation-delay: 1.5s; }
+
+/* Hiệu ứng scroll */
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.fade-in-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hiệu ứng đặc biệt cho tên cô dâu chú rể */
+.name-glow {
+  text-shadow: 0 0 10px rgba(245, 98, 122, 0.5);
+  animation: nameGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes nameGlow {
+  from {
+    text-shadow: 0 0 10px rgba(245, 98, 122, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(245, 98, 122, 0.8), 0 0 30px rgba(245, 98, 122, 0.6);
+  }
+}
+
+/* Hiệu ứng float cho ảnh */
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hiệu ứng border pulse */
+.pulse-border {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(245, 98, 122, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(245, 98, 122, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 98, 122, 0); }
+}
+
+.top_content {
+  width: 100%;
+  height: 100vh; /* Hoặc chiều cao bạn muốn */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px 0 0px;
+  position: relative;
+  
+  /* Background image */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), 
+                   url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Hiệu ứng xuất hiện */
+  opacity: 0;
+  animation: backgroundReveal 2s ease-in-out 0.5s forwards;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes backgroundReveal {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+    filter: brightness(0.8) blur(5px);
+  }
+  50% {
+    opacity: 0.8;
+    filter: brightness(0.9) blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1) blur(0);
+  }
 }
 
-@keyframes App-logo-spin {
+
+.logo_wedding {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff9baa, #fb99aa);
+  padding: 10px;
+  box-shadow: 0 8px 25px rgba(245, 98, 122, 0.3);
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.logo_wedding:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.couple_name {
+  width: 90%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.couple_name_style {
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.2;
+  color: #f5627a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #f5627a, #ff9baa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px rgba(245, 98, 122, 0.3); }
+  to { text-shadow: 0 0 20px rgba(245, 98, 122, 0.6), 0 0 30px rgba(245, 98, 122, 0.4); }
+}
+
+.couple_date_style {
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f5627a;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.couple_text {
+  font-family: "Great Vibes", cursive;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f5627a;
+  margin: 5px 0;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(30px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.medium_content {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.girl_family, .boy_family {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 30px 0;
+  position: relative;
+}
+
+.girl_family {
+  background: linear-gradient(90deg, rgba(255, 245, 245, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+.boy_family {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 245, 245, 0.8) 100%);
+}
+
+.girl_name {
+  width: 50px;
+  height: 100px;
+  background: linear-gradient(135deg, #ff9baa, #f5627a);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(245, 98, 122, 0.3);
+  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.girl_name:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(245, 98, 122, 0.4);
+}
+
+.girl_name_style {
+  font-family: "Great Vibes", cursive;
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.girl_family_details {
+  width: 160px;
+  height: auto;
+  color: #f5627a;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  transition: all 0.3s ease;
+}
+
+.girl_family_details:hover {
+  transform: translateY(-3px);
+}
+
+.notice {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, rgba(255, 245, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+  margin: 40px 0;
+}
+
+.notice_content {
+  width: 85%;
+  height: auto;
+  position: relative;
+  padding: 40px 20px;
+  border: 2px solid #ff9baa;
+}
+
+.date_wedding {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.container_date {
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #ff9baa;
+  margin: 0 auto;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 40px 20px;
+  background: white;
+  box-shadow: 0 15px 35px rgba(245, 98, 122, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+/* .container_date::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #ff9baa, #f5627a, #ff9baa);
+  animation: shimmer 3s infinite;
+} */
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.location, .event_wedding, .box_wedding {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  margin: 20px 0;
+}
+
+.location {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 245, 245, 0.9) 100%);
+}
+
+.single_img {
+  width: 95%;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.single_img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.single_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.single_img:hover img {
+  transform: scale(1.1);
+}
+
+.two_img {
+  width: 90%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.two_img img {
+  width: 48%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.two_img img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ending {
+  width: 100%;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f5627a, #ff9baa);
+  color: white;
+  text-align: center;
+}
+
+.ending span {
+  display: block;
+  margin: 10px 0;
+  font-family: "Great Vibes", cursive;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heart-beat {
+  animation: heartBeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .couple_name_style {
+    font-size: 32px;
+  }
+  
+  .girl_family, .boy_family {
+    text-align: center;
+  }
+  
+  .girl_family_details {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .two_img {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .two_img img {
+    width: 100%;
+    margin: 10px 0;
   }
 }
