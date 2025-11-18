@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/ThiepCuoi/static/css/main.d8b64d13.css",
-    "main.js": "/ThiepCuoi/static/js/main.926c8bf1.js",
+    "main.css": "/ThiepCuoi/static/css/main.abe82487.css",
+    "main.js": "/ThiepCuoi/static/js/main.042c35c9.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
     "static/media/anhcuoi3.jpg": "/ThiepCuoi/static/media/anhcuoi3.fa815356b7b197435229.jpg",
     "static/media/anhcuoi2.jpg": "/ThiepCuoi/static/media/anhcuoi2.c2cdaa9f481a29868979.jpg",
     "static/media/anhcuoi1.jpg": "/ThiepCuoi/static/media/anhcuoi1.1205c58e893e773ccfdc.jpg",
+    "static/media/sen.webp": "/ThiepCuoi/static/media/sen.2c34986b1171e674aab1.webp",
     "static/media/ido.mp3": "/ThiepCuoi/static/media/ido.e631ab641675ed70db72.mp3",
+    "static/media/nentruc1.webp": "/ThiepCuoi/static/media/nentruc1.cfca4ad0659a6e84c2c5.webp",
     "static/media/gif.gif": "/ThiepCuoi/static/media/gif.d2d231d8b86b533b4db0.gif",
+    "static/media/nentruc2.webp": "/ThiepCuoi/static/media/nentruc2.24bb7938d04932a80908.webp",
     "static/media/nensen2.png": "/ThiepCuoi/static/media/nensen2.095015fe2b6f95ba91f1.png",
     "static/media/nensen1.png": "/ThiepCuoi/static/media/nensen1.1e660fc876d9f2e7e294.png",
     "static/media/logo-wedding.png": "/ThiepCuoi/static/media/logo-wedding.2072d2b59cb8aa1a3a00.png",
     "static/media/bg.jpg": "/ThiepCuoi/static/media/bg.75670f117e042295c3d3.jpg",
     "static/media/borderTopLeft.png": "/ThiepCuoi/static/media/borderTopLeft.0444f363ab5992a5e6ef.png",
     "index.html": "/ThiepCuoi/index.html",
-    "main.d8b64d13.css.map": "/ThiepCuoi/static/css/main.d8b64d13.css.map",
-    "main.926c8bf1.js.map": "/ThiepCuoi/static/js/main.926c8bf1.js.map",
+    "main.abe82487.css.map": "/ThiepCuoi/static/css/main.abe82487.css.map",
+    "main.042c35c9.js.map": "/ThiepCuoi/static/js/main.042c35c9.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8b64d13.css",
-    "static/js/main.926c8bf1.js"
+    "static/css/main.abe82487.css",
+    "static/js/main.042c35c9.js"
   ]
 }
