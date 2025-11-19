@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ThiepCuoi/static/css/main.58cb62eb.css",
-    "main.js": "/ThiepCuoi/static/js/main.29ea6f59.js",
+    "main.css": "/ThiepCuoi/static/css/main.00e7fb1f.css",
+    "main.js": "/ThiepCuoi/static/js/main.7ab91f29.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
     "static/media/anhcuoi3.jpg": "/ThiepCuoi/static/media/anhcuoi3.fa815356b7b197435229.jpg",
     "static/media/anhcuoi2.jpg": "/ThiepCuoi/static/media/anhcuoi2.c2cdaa9f481a29868979.jpg",
@@ -13,16 +13,17 @@
     "static/media/nentruc2.webp": "/ThiepCuoi/static/media/nentruc2.24bb7938d04932a80908.webp",
     "static/media/nensen2.png": "/ThiepCuoi/static/media/nensen2.095015fe2b6f95ba91f1.png",
     "static/media/nensen1.png": "/ThiepCuoi/static/media/nensen1.1e660fc876d9f2e7e294.png",
+    "static/media/khung.webp": "/ThiepCuoi/static/media/khung.26d00bc5d0c2cdf0ef3e.webp",
     "static/media/logo-wedding.png": "/ThiepCuoi/static/media/logo-wedding.2072d2b59cb8aa1a3a00.png",
     "static/media/bg.jpg": "/ThiepCuoi/static/media/bg.75670f117e042295c3d3.jpg",
     "static/media/borderTopLeft.png": "/ThiepCuoi/static/media/borderTopLeft.0444f363ab5992a5e6ef.png",
     "index.html": "/ThiepCuoi/index.html",
-    "main.58cb62eb.css.map": "/ThiepCuoi/static/css/main.58cb62eb.css.map",
-    "main.29ea6f59.js.map": "/ThiepCuoi/static/js/main.29ea6f59.js.map",
+    "main.00e7fb1f.css.map": "/ThiepCuoi/static/css/main.00e7fb1f.css.map",
+    "main.7ab91f29.js.map": "/ThiepCuoi/static/js/main.7ab91f29.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58cb62eb.css",
-    "static/js/main.29ea6f59.js"
+    "static/css/main.00e7fb1f.css",
+    "static/js/main.7ab91f29.js"
   ]
 }
