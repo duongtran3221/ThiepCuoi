@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ThiepCuoi/static/css/main.00e7fb1f.css",
-    "main.js": "/ThiepCuoi/static/js/main.7ab91f29.js",
+    "main.css": "/ThiepCuoi/static/css/main.aad6a5ee.css",
+    "main.js": "/ThiepCuoi/static/js/main.fd7ed1e0.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
     "static/media/anhcuoi3.jpg": "/ThiepCuoi/static/media/anhcuoi3.fa815356b7b197435229.jpg",
     "static/media/anhcuoi2.jpg": "/ThiepCuoi/static/media/anhcuoi2.c2cdaa9f481a29868979.jpg",
@@ -13,17 +13,26 @@
     "static/media/nentruc2.webp": "/ThiepCuoi/static/media/nentruc2.24bb7938d04932a80908.webp",
     "static/media/nensen2.png": "/ThiepCuoi/static/media/nensen2.095015fe2b6f95ba91f1.png",
     "static/media/nensen1.png": "/ThiepCuoi/static/media/nensen1.1e660fc876d9f2e7e294.png",
+    "static/media/SITKA.TTC": "/ThiepCuoi/static/media/SITKA.e9150d1b53f52616c85d.TTC",
     "static/media/khung.webp": "/ThiepCuoi/static/media/khung.26d00bc5d0c2cdf0ef3e.webp",
+    "static/media/font2.TTF": "/ThiepCuoi/static/media/font2.447c312d32f8074fa186.TTF",
     "static/media/logo-wedding.png": "/ThiepCuoi/static/media/logo-wedding.2072d2b59cb8aa1a3a00.png",
     "static/media/bg.jpg": "/ThiepCuoi/static/media/bg.75670f117e042295c3d3.jpg",
+    "static/media/[TIS] HAND BOYS.TTF": "/ThiepCuoi/static/media/[TIS] HAND BOYS.1dda1d253232b15ac779.TTF",
+    "static/media/heart1.webp": "/ThiepCuoi/static/media/heart1.abea43c0706e2b5c7373.webp",
+    "static/media/qr1.jpg": "/ThiepCuoi/static/media/qr1.b26d75b4792a76a90ce3.jpg",
+    "static/media/SVN-RUSHTICK.OTF": "/ThiepCuoi/static/media/SVN-RUSHTICK.90fc64cdfceb525213f6.OTF",
+    "static/media/qr2.jpg": "/ThiepCuoi/static/media/qr2.5a90686ec5abb53af5f2.jpg",
+    "static/media/Fz Alpha Brights.otf": "/ThiepCuoi/static/media/Fz Alpha Brights.72274f3cb8349a592b66.otf",
+    "static/media/ITCEDSCR.TTF": "/ThiepCuoi/static/media/ITCEDSCR.bf7838a6543a08923c39.TTF",
     "static/media/borderTopLeft.png": "/ThiepCuoi/static/media/borderTopLeft.0444f363ab5992a5e6ef.png",
     "index.html": "/ThiepCuoi/index.html",
-    "main.00e7fb1f.css.map": "/ThiepCuoi/static/css/main.00e7fb1f.css.map",
-    "main.7ab91f29.js.map": "/ThiepCuoi/static/js/main.7ab91f29.js.map",
+    "main.aad6a5ee.css.map": "/ThiepCuoi/static/css/main.aad6a5ee.css.map",
+    "main.fd7ed1e0.js.map": "/ThiepCuoi/static/js/main.fd7ed1e0.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00e7fb1f.css",
-    "static/js/main.7ab91f29.js"
+    "static/css/main.aad6a5ee.css",
+    "static/js/main.fd7ed1e0.js"
   ]
 }
