@@ -1,19 +1,17 @@
 {
   "files": {
     "main.css": "/ThiepCuoi/static/css/main.82ce8c14.css",
-    "main.js": "/ThiepCuoi/static/js/main.7efabada.js",
+    "main.js": "/ThiepCuoi/static/js/main.948b2bb1.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
-    "static/media/anhcuoi3.jpg": "/ThiepCuoi/static/media/anhcuoi3.fa815356b7b197435229.jpg",
-    "static/media/anhcuoi2.jpg": "/ThiepCuoi/static/media/anhcuoi2.c2cdaa9f481a29868979.jpg",
     "static/media/ido2.mp3": "/ThiepCuoi/static/media/ido2.3c6d791089386f3ef7f5.mp3",
     "static/media/anhcuoi1.jpg": "/ThiepCuoi/static/media/anhcuoi1.1205c58e893e773ccfdc.jpg",
     "static/media/sen.webp": "/ThiepCuoi/static/media/sen.2c34986b1171e674aab1.webp",
-    "static/media/nentruc1.webp": "/ThiepCuoi/static/media/nentruc1.cfca4ad0659a6e84c2c5.webp",
     "static/media/gif.gif": "/ThiepCuoi/static/media/gif.d2d231d8b86b533b4db0.gif",
-    "static/media/nentruc2.webp": "/ThiepCuoi/static/media/nentruc2.24bb7938d04932a80908.webp",
     "static/media/nensen2.png": "/ThiepCuoi/static/media/nensen2.095015fe2b6f95ba91f1.png",
     "static/media/nensen1.png": "/ThiepCuoi/static/media/nensen1.1e660fc876d9f2e7e294.png",
+    "static/media/anhcuoi2.jpg": "/ThiepCuoi/static/media/anhcuoi2.d44bc42b99f17c0ddca6.jpg",
     "static/media/SITKA.TTC": "/ThiepCuoi/static/media/SITKA.e9150d1b53f52616c85d.TTC",
+    "static/media/anhcuoi3.jpg": "/ThiepCuoi/static/media/anhcuoi3.963758afb8118ab2b0d8.jpg",
     "static/media/khung.webp": "/ThiepCuoi/static/media/khung.26d00bc5d0c2cdf0ef3e.webp",
     "static/media/font2.TTF": "/ThiepCuoi/static/media/font2.447c312d32f8074fa186.TTF",
     "static/media/logo-wedding.png": "/ThiepCuoi/static/media/logo-wedding.2072d2b59cb8aa1a3a00.png",
@@ -22,17 +20,19 @@
     "static/media/heart1.webp": "/ThiepCuoi/static/media/heart1.abea43c0706e2b5c7373.webp",
     "static/media/qr1.jpg": "/ThiepCuoi/static/media/qr1.b26d75b4792a76a90ce3.jpg",
     "static/media/SVN-RUSHTICK.OTF": "/ThiepCuoi/static/media/SVN-RUSHTICK.90fc64cdfceb525213f6.OTF",
+    "static/media/nentruc1.avif": "/ThiepCuoi/static/media/nentruc1.bb37e706de9c398b55de.avif",
     "static/media/qr2.jpg": "/ThiepCuoi/static/media/qr2.5a90686ec5abb53af5f2.jpg",
     "static/media/Fz Alpha Brights.otf": "/ThiepCuoi/static/media/Fz Alpha Brights.72274f3cb8349a592b66.otf",
     "static/media/ITCEDSCR.TTF": "/ThiepCuoi/static/media/ITCEDSCR.bf7838a6543a08923c39.TTF",
+    "static/media/nentruc2.avif": "/ThiepCuoi/static/media/nentruc2.b0435a70076d1e125582.avif",
     "static/media/borderTopLeft.png": "/ThiepCuoi/static/media/borderTopLeft.0444f363ab5992a5e6ef.png",
     "index.html": "/ThiepCuoi/index.html",
     "main.82ce8c14.css.map": "/ThiepCuoi/static/css/main.82ce8c14.css.map",
-    "main.7efabada.js.map": "/ThiepCuoi/static/js/main.7efabada.js.map",
+    "main.948b2bb1.js.map": "/ThiepCuoi/static/js/main.948b2bb1.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82ce8c14.css",
-    "static/js/main.7efabada.js"
+    "static/js/main.948b2bb1.js"
   ]
 }
