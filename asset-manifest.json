@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ThiepCuoi/static/css/main.362d216c.css",
-    "main.js": "/ThiepCuoi/static/js/main.1d608ef5.js",
+    "main.js": "/ThiepCuoi/static/js/main.95d26604.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
     "static/media/anhcuoi3.jpg": "/ThiepCuoi/static/media/anhcuoi3.fa815356b7b197435229.jpg",
     "static/media/anhcuoi2.jpg": "/ThiepCuoi/static/media/anhcuoi2.c2cdaa9f481a29868979.jpg",
@@ -28,11 +28,11 @@
     "static/media/borderTopLeft.png": "/ThiepCuoi/static/media/borderTopLeft.0444f363ab5992a5e6ef.png",
     "index.html": "/ThiepCuoi/index.html",
     "main.362d216c.css.map": "/ThiepCuoi/static/css/main.362d216c.css.map",
-    "main.1d608ef5.js.map": "/ThiepCuoi/static/js/main.1d608ef5.js.map",
+    "main.95d26604.js.map": "/ThiepCuoi/static/js/main.95d26604.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.362d216c.css",
-    "static/js/main.1d608ef5.js"
+    "static/js/main.95d26604.js"
   ]
 }
