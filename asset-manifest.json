@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ThiepCuoi/static/css/main.83ed3f11.css",
-    "main.js": "/ThiepCuoi/static/js/main.436f885c.js",
+    "main.css": "/ThiepCuoi/static/css/main.278e0a50.css",
+    "main.js": "/ThiepCuoi/static/js/main.d6cebad2.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
     "static/media/ido2.mp3": "/ThiepCuoi/static/media/ido2.3c6d791089386f3ef7f5.mp3",
     "static/media/gif.gif": "/ThiepCuoi/static/media/gif.d2d231d8b86b533b4db0.gif",
@@ -19,7 +19,6 @@
     "static/media/ac5.avif": "/ThiepCuoi/static/media/ac5.6a545977c3bd211c691a.avif",
     "static/media/font2.TTF": "/ThiepCuoi/static/media/font2.447c312d32f8074fa186.TTF",
     "static/media/ac11.avif": "/ThiepCuoi/static/media/ac11.da5e72f66027f8f70d00.avif",
-    "static/media/logo-wedding.png": "/ThiepCuoi/static/media/logo-wedding.2072d2b59cb8aa1a3a00.png",
     "static/media/[TIS] HLNETCO1_0.TTF": "/ThiepCuoi/static/media/[TIS] HLNETCO1_0.574fc7f4665173bca903.TTF",
     "static/media/[TIS] HAND BOYS.TTF": "/ThiepCuoi/static/media/[TIS] HAND BOYS.1dda1d253232b15ac779.TTF",
     "static/media/qr1.jpg": "/ThiepCuoi/static/media/qr1.b26d75b4792a76a90ce3.jpg",
@@ -27,6 +26,7 @@
     "static/media/LNTH-Adelia.ttf": "/ThiepCuoi/static/media/LNTH-Adelia.b4e120be9bdd12a01312.ttf",
     "static/media/nentruc1.avif": "/ThiepCuoi/static/media/nentruc1.bb37e706de9c398b55de.avif",
     "static/media/qr2.jpg": "/ThiepCuoi/static/media/qr2.5a90686ec5abb53af5f2.jpg",
+    "static/media/chuhy2.png": "/ThiepCuoi/static/media/chuhy2.11ff3f532f40d44a328e.png",
     "static/media/Fz Alpha Brights.otf": "/ThiepCuoi/static/media/Fz Alpha Brights.72274f3cb8349a592b66.otf",
     "static/media/ITCEDSCR.TTF": "/ThiepCuoi/static/media/ITCEDSCR.bf7838a6543a08923c39.TTF",
     "static/media/nentruc2.avif": "/ThiepCuoi/static/media/nentruc2.b0435a70076d1e125582.avif",
@@ -35,12 +35,12 @@
     "static/media/BeautiqueDisplay-BlackItalic.otf": "/ThiepCuoi/static/media/BeautiqueDisplay-BlackItalic.34c5dc2f934777c94366.otf",
     "static/media/khung.avif": "/ThiepCuoi/static/media/khung.2427416dbf2346753d2b.avif",
     "index.html": "/ThiepCuoi/index.html",
-    "main.83ed3f11.css.map": "/ThiepCuoi/static/css/main.83ed3f11.css.map",
-    "main.436f885c.js.map": "/ThiepCuoi/static/js/main.436f885c.js.map",
+    "main.278e0a50.css.map": "/ThiepCuoi/static/css/main.278e0a50.css.map",
+    "main.d6cebad2.js.map": "/ThiepCuoi/static/js/main.d6cebad2.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83ed3f11.css",
-    "static/js/main.436f885c.js"
+    "static/css/main.278e0a50.css",
+    "static/js/main.d6cebad2.js"
   ]
 }
