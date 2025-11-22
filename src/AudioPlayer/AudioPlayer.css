@@ -1,0 +1,99 @@
+.audio-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.btnAudio {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnAudio:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btnAudio:active {
+  transform: scale(0.95);
+}
+
+/* Ẩn icon không cần thiết */
+.btnAudio .icon {
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Trạng thái tắt nhạc */
+.btnAudio.paused .volume-mute {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.btnAudio.paused .volume-up {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+/* Trạng thái bật nhạc */
+.btnAudio.playing .volume-mute {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.btnAudio.playing .volume-up {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hiệu ứng pulse khi đang phát */
+.btnAudio.playing::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .audio-container {
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  .btnAudio {
+    width: 45px;
+    height: 45px;
+  }
+}

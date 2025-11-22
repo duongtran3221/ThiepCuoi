@@ -1,4 +1,84 @@
 /* App.css */
+/* RESET & BASE STYLES */
+@font-face {
+  font-family: "MyFont5";
+  src: url("./assets/fonts/SITKA.TTC") format("truetype-collection");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/Fz Alpha Brights.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont8';
+  src: url('./assets/fonts/BeautiqueDisplay-BlackItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont4';
+  src: url('./assets/fonts/SVN-RUSHTICK.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont2';
+  src: url('./assets/fonts/font2.TTF') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont9';
+  src: url('./assets/fonts/LNTH-Adelia.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyFont10';
+  src: url('./assets/fonts/[TIS] HLNETCO1_0.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyFont11';
+  src: url('./assets/fonts/KD-MOON-LIGHT.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'MyFont12';
+  src: url('./assets/fonts/TUV-NOH-CARBONE.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'MyFont13';
+  src: url('./assets/fonts/VL-MICHELIA.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyFont6';
+  src: url('./assets/fonts/ITCEDSCR.TTF') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont3';
+  src: url('./assets/fonts/[TIS] HAND BOYS.TTF') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
   width: 100%;
@@ -7,8 +87,7 @@
 
 .content {
   width: 100%;
-  background: linear-gradient(135deg, #fff5f5 0%, #fff 50%, #fff5f5 100%);
-  position: relative;
+  background: white;
 }
 
 /* Hiệu ứng nền hoa */
@@ -19,33 +98,215 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    radial-gradient(rgba(245, 98, 122, 0.1) 2px, transparent 2px),
-    radial-gradient(rgba(255, 153, 170, 0.1) 2px, transparent 2px);
+  background-image:
+    radial-gradient(#fae8ee 2px, transparent 2px),
+    radial-gradient(#fae8ee 2px, transparent 2px);
   background-size: 50px 50px;
   background-position: 0 0, 25px 25px;
   z-index: -1;
 }
 
-/* Hiệu ứng cho text khi mới vào */
-.text-reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: textReveal 1s ease forwards;
+/* TOP CONTENT */
+.top_content {
+  width: 100%;
+  height: calc(var(--vh) * 100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
 }
 
-@keyframes textReveal {
-  to {
+/* Animation Classes */
+.slide-from-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInFromLeft 1.2s ease-out 0.8s forwards;
+}
+
+.slide-from-right {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInFromRight 1.2s ease-out 0.8s forwards;
+}
+
+.slide-from-bottom {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: slideInFromBottom 1.2s ease-out 3s forwards;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out 1.8s forwards;
+}
+
+.fade-in-up-delay {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out 2.2s forwards;
+}
+
+/* Keyframes */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 0.7;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 0.7;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Hiệu ứng delay cho các phần tử */
-.text-reveal-delay-1 { animation-delay: 0.6s; }
-.text-reveal-delay-2 { animation-delay: 0.9s; }
-.text-reveal-delay-3 { animation-delay: 1.2s; }
-.text-reveal-delay-4 { animation-delay: 1.5s; }
+/* Decoration images */
+.decoration {
+  position: absolute;
+  z-index: 1;
+}
+
+.top-right {
+  width: 120px;
+  height: 120px;
+  top: 0;
+  right: 0;
+}
+
+.top-left {
+  width: 120px;
+  height: 130px;
+  top: 0;
+  left: 0;
+}
+
+
+
+.bottom-left {
+  width: 60%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+}
+@media (min-width: 1024px) {
+  .bottom-left {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-left {
+    width: 250px;
+    height: 200px;
+  }
+}
+/* INVITATION CARD */
+.invitation-card {
+  width: 80%;
+  height: 220px;
+  margin-top: 80px;
+}
+
+.name-bride-container,
+.heart-center-vertical,
+.name-groom-container {
+  width: 100%;
+  height: 60px;
+  font-size: 36px;
+  font-family: 'MyFont', sans-serif;
+  ;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  color: #df9eac;
+}
+
+.name-bride-container,
+.heart-center-vertical,
+.name-groom-container span {
+  width: 100%;
+  font-style: italic;
+}
+
+.heart-center-vertical {
+  display: flex;
+  justify-content: center;
+}
+
+.name-bride-container {
+  text-align: left;
+}
+
+.name-groom-container {
+  text-align: right !important;
+}
+
+/* WEDDING DATE */
+.wedding-date-right {
+  width: 80%;
+  height: 150px;
+  display: flex;
+  justify-content: right;
+}
+
+.date-right-container {
+  width: 50px;
+  height: 135px;
+  background-color: #194f1b;
+  border-radius: 25px;
+  padding: 5px;
+  font-family: 'MyFont2', sans-serif;
+}
+
+.date-right-item {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
 
 /* Hiệu ứng scroll */
 .fade-in-scroll {
@@ -59,61 +320,28 @@
   transform: translateY(0);
 }
 
-/* Hiệu ứng đặc biệt cho tên cô dâu chú rể */
-.name-glow {
-  text-shadow: 0 0 10px rgba(245, 98, 122, 0.5);
-  animation: nameGlow 1s ease-in-out infinite alternate;
-}
-
-@keyframes nameGlow {
-  from {
-    text-shadow: 0 0 10px rgba(245, 98, 122, 0.5);
-  }
-  to {
-    text-shadow: 0 0 20px rgba(245, 98, 122, 0.8), 0 0 30px rgba(245, 98, 122, 0.6);
-  }
-}
-
-/* Hiệu ứng float cho ảnh */
-.float-animation {
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-/* Hiệu ứng border pulse */
-.pulse-border {
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(245, 98, 122, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(245, 98, 122, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(245, 98, 122, 0); }
-}
-
-.top_content {
-  width: 100%;
-  height: 100vh; /* Hoặc chiều cao bạn muốn */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 0 0px;
-  position: relative;
-  
-  /* Background image */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), 
-                   url('./assets/bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /* Hiệu ứng xuất hiện */
+/* Hiệu ứng scroll từ trái */
+.fade-in-left-scroll {
   opacity: 0;
-  animation: backgroundReveal 2s ease-in-out 0.5s forwards;
+  transform: translateX(-100px);
+  transition: all 0.8s ease;
+}
+
+.fade-in-left-scroll.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hiệu ứng scroll từ phải */
+.fade-in-right-scroll {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease;
+}
+
+.fade-in-right-scroll.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @keyframes backgroundReveal {
@@ -122,10 +350,12 @@
     transform: scale(1.1);
     filter: brightness(0.8) blur(5px);
   }
+
   50% {
     opacity: 0.8;
     filter: brightness(0.9) blur(2px);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -135,61 +365,32 @@
 
 
 .logo_wedding {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #ff9baa, #fb99aa);
-  padding: 10px;
-  box-shadow: 0 8px 25px rgba(245, 98, 122, 0.3);
-  animation: float 3s ease-in-out infinite;
+  width: 80px;
+  height: 80px;
+  /* border-radius: 50%; */
+  /* box-shadow: 0 8px 25px rgba(245, 98, 122, 0.3); */
   transition: transform 0.3s ease;
+  background-color: transparent;
+  /* Kết hợp cả fade-in và float */
+  animation:
+    fadeInUp 0.8s ease-out 1.8s forwards,
+    float 3s ease-in-out 2.6s infinite;
 }
 
 .logo_wedding:hover {
   transform: scale(1.1) rotate(5deg);
 }
 
-.couple_name {
-  width: 90%;
-  height: auto;
-  margin: 20px 0;
-}
+@keyframes float {
 
-.couple_name_style {
-  font-family: "Great Vibes", cursive;
-  font-size: 50px;
-  font-weight: 600;
-  font-style: italic;
-  line-height: 1.2;
-  color: #f5627a;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(45deg, #f5627a, #ff9baa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: glow 2s ease-in-out infinite alternate;
-}
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
 
-@keyframes glow {
-  from { text-shadow: 0 0 10px rgba(245, 98, 122, 0.3); }
-  to { text-shadow: 0 0 20px rgba(245, 98, 122, 0.6), 0 0 30px rgba(245, 98, 122, 0.4); }
-}
-
-.couple_date_style {
-  font-family: "Great Vibes", cursive;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #f5627a;
-  letter-spacing: 2px;
-  animation: fadeInUp 1s ease-out;
-}
-
-.couple_text {
-  font-family: "Great Vibes", cursive;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #f5627a;
-  animation: fadeInUp 1s ease-out 0.2s both;
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes fadeInUp {
@@ -197,6 +398,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -209,7 +411,8 @@
   position: relative;
 }
 
-.girl_family, .boy_family {
+.girl_family,
+.boy_family {
   width: 100%;
   height: auto;
   display: flex;
@@ -218,25 +421,26 @@
 }
 
 .girl_family {
-  background: linear-gradient(90deg, rgba(255, 245, 245, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0.4) 100%);
 }
 
 .boy_family {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 245, 245, 0.8) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, white 100%);
 }
 
 .girl_name {
   width: 50px;
   height: 100px;
-  background: linear-gradient(135deg, #ff9baa, #f5627a);
+  background: linear-gradient(135deg, #194f1b, #194f1b);
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
   box-shadow: 0 10px 25px rgba(245, 98, 122, 0.3);
-  margin: 0 20px;
+  margin: 0 10px;
   transition: all 0.3s ease;
+  font-family: "MyFont4", sans-serif;
 }
 
 .girl_name:hover {
@@ -245,21 +449,20 @@
 }
 
 .girl_name_style {
-  font-family: "Great Vibes", cursive;
+  font-family: "MyFont4";
   color: white;
   font-style: italic;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .girl_family_details {
-  width: 160px;
+  width: 180px;
   height: auto;
-  color: #f5627a;
+  color: #194f1b;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
   transition: all 0.3s ease;
 }
 
@@ -273,22 +476,21 @@
   position: relative;
   justify-content: center;
   padding: 60px 0;
-  background: linear-gradient(135deg, rgba(255, 245, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: linear-gradient(135deg, white 0%, white 100%);
   margin: 40px 0;
+
 }
 
 .notice_content {
-  width: 85%;
+  width: 100%;
   height: auto;
   position: relative;
   padding: 40px 20px;
-  border: 2px solid #ff9baa;
 }
 
 .date_wedding {
   width: 100%;
   height: auto;
-  margin-top: 60px;
   padding: 40px 0;
 }
 
@@ -298,7 +500,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid #ff9baa;
+  border: 3px solid #1e7121;
   margin: 0 auto;
   border-top-left-radius: 50% 20%;
   border-top-right-radius: 50% 20%;
@@ -306,28 +508,26 @@
   border-bottom-right-radius: 20px;
   padding: 40px 20px;
   background: white;
-  box-shadow: 0 15px 35px rgba(245, 98, 122, 0.15);
+  box-shadow: 0 15px 35px #e1f0e2;
   position: relative;
-  overflow: hidden;
+
+  color: #194f1b;
 }
 
-/* .container_date::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(90deg, #ff9baa, #f5627a, #ff9baa);
-  animation: shimmer 3s infinite;
-} */
 
 @keyframes shimmer {
-  0% { background-position: -200px 0; }
-  100% { background-position: 200px 0; }
+  0% {
+    background-position: -200px 0;
+  }
+
+  100% {
+    background-position: 200px 0;
+  }
 }
 
-.location, .event_wedding, .box_wedding {
+.location,
+.event_wedding,
+.box_wedding {
   width: 100%;
   height: auto;
   display: flex;
@@ -343,7 +543,7 @@
 
 .single_img {
   width: 95%;
-  height: 300px;
+  height: 500px;
   margin: 20px auto;
   border-radius: 20px;
   overflow: hidden;
@@ -351,10 +551,6 @@
   transition: all 0.3s ease;
 }
 
-.single_img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-}
 
 .single_img img {
   width: 100%;
@@ -363,9 +559,6 @@
   transition: transform 0.5s ease;
 }
 
-.single_img:hover img {
-  transform: scale(1.1);
-}
 
 .two_img {
   width: 90%;
@@ -381,20 +574,15 @@
   width: 48%;
   height: 100%;
   border-radius: 15px;
-  object-fit: cover;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
 }
 
-.two_img img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
 
 .ending {
   width: 100%;
   padding: 60px 0;
-  background: linear-gradient(135deg, #f5627a, #ff9baa);
+  background: linear-gradient(135deg, #1d6c20, #58ec5d);
   color: white;
   text-align: center;
 }
@@ -412,8 +600,15 @@
 }
 
 @keyframes heartBeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .fade-in {
@@ -421,8 +616,13 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Responsive */
@@ -430,23 +630,793 @@
   .couple_name_style {
     font-size: 32px;
   }
-  
-  .girl_family, .boy_family {
+
+  .girl_family,
+  .boy_family {
     text-align: center;
   }
-  
+
   .girl_family_details {
     align-items: center;
     text-align: center;
   }
-  
-  .two_img {
+
+  /* .two_img {
     flex-direction: column;
     height: auto;
-  }
-  
-  .two_img img {
+  } */
+
+  /* .two_img img {
     width: 100%;
     margin: 10px 0;
+  } */
+}
+
+
+
+/* Hiệu ứng slide từ trái sang */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    filter: blur(5px);
+  }
+
+  70% {
+    opacity: 0.8;
+    transform: translateX(10px);
+    filter: blur(1px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+/* Hiệu ứng slide từ phải vào */
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+    filter: blur(5px);
+  }
+
+  70% {
+    opacity: 0.8;
+    transform: translateX(-10px);
+    filter: blur(1px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+/* Hoặc hiệu ứng mượt mà hơn với bounce nhẹ */
+@keyframes slideInLeftBounce {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px) scale(0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(20px) scale(1.02);
+  }
+
+  80% {
+    transform: translateX(-5px) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideInRightBounce {
+  0% {
+    opacity: 0;
+    transform: translateX(150px) scale(0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-20px) scale(1.02);
+  }
+
+  80% {
+    transform: translateX(5px) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Class có thể tái sử dụng */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+.fade-in-left-bounce {
+  opacity: 0;
+  transform: translateX(-150px) scale(0.9);
+  animation: slideInLeftBounce 1.2s ease-out forwards;
+}
+
+.fade-in-right-bounce {
+  opacity: 0;
+  transform: translateX(150px) scale(0.9);
+  animation: slideInRightBounce 1.2s ease-out forwards;
+}
+
+
+/* ==================== */
+/* THIẾT KẾ NÚT AUDIO MỚI */
+/* ==================== */
+
+.audio-container {
+  position: fixed !important;
+  top: 5px !important;
+  right: 5px !important;
+  z-index: 999999 !important;
+  width: 50px !important;
+  height: 50px !important;
+  pointer-events: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btnAudio {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #f5627a, #ff9baa) !important;
+  color: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 3px solid rgba(255, 255, 255, 0.9) !important;
+  box-shadow:
+    0 4px 15px rgba(245, 98, 122, 0.4),
+    0 0 0 2px rgba(255, 255, 255, 0.3) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  z-index: 999999 !important;
+  animation: pulse-glow 2s infinite !important;
+}
+
+.btnAudio:hover {
+  transform: scale(1.1) !important;
+  box-shadow:
+    0 6px 20px rgba(245, 98, 122, 0.6),
+    0 0 0 3px rgba(255, 255, 255, 0.4) !important;
+}
+
+.btnAudio:active {
+  transform: scale(0.95) !important;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow:
+      0 4px 15px rgba(245, 98, 122, 0.4),
+      0 0 0 2px rgba(255, 255, 255, 0.3);
+  }
+
+  50% {
+    box-shadow:
+      0 4px 20px rgba(245, 98, 122, 0.6),
+      0 0 0 3px rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    box-shadow:
+      0 4px 15px rgba(245, 98, 122, 0.4),
+      0 0 0 2px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* icon */
+.btnAudio .icon {
+  position: absolute !important;
+  width: 28px !important;
+  height: 28px !important;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.3s ease !important;
+}
+
+.btnAudio.playing .volume-up {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.btnAudio.paused .volume-mute {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.btnAudio:hover::after {
+  opacity: 1;
+}
+
+/* Đảm bảo không có phần nào che nút audio */
+.App,
+.content,
+.top_content,
+.medium_content,
+.bot_content {
+  overflow: visible !important;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .audio-container {
+    top: calc(100vh - 80px) !important;
+    left: 10px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .btnAudio {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .btnAudio .icon {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .btnAudio::after {
+    font-size: 11px;
+    padding: 6px 10px;
+    bottom: 70px;
+  }
+}
+
+/* Đảm bảo nút audio luôn hiển thị trên mọi phần tử */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Form Xác Nhận Tham Dự */
+.join_form {
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 245, 245, 0.95) 100%);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(245, 98, 122, 0.15);
+  border: 2px solid #194f1b;
+  position: relative;
+  overflow: hidden;
+}
+
+.join_form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #59e75d, #194f1b, #59e75d);
+  animation: shimmer 3s infinite;
+}
+
+.form_title {
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  color: #194f1b;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.form_group {
+  margin-bottom: 25px;
+}
+
+.form_label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #194f1b;
+  font-size: 14px;
+}
+
+.form_input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #194f1b;
+  border-radius: 10px;
+  font-size: 14px;
+  background: white;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form_input:focus {
+  outline: none;
+  border-color: #194f1b;
+  box-shadow: 0 0 0 3px rgba(245, 98, 122, 0.1);
+  transform: translateY(-2px);
+}
+
+.form_input::placeholder {
+  color: #ccc;
+}
+
+/* Radio Group */
+.radio_group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.radio_label {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border: 2px solid #194f1b;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #666;
+}
+
+.radio_label:hover {
+  border-color: #194f1b;
+  transform: translateY(-2px);
+}
+
+.radio_label input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #194f1b;
+  transform: scale(1.2);
+}
+
+.radio_label.selected {
+  border-color: #194f1b;
+  background: linear-gradient(135deg, rgba(255, 155, 170, 0.1), rgba(245, 98, 122, 0.05));
+  color: #194f1b;
+  font-weight: 600;
+}
+
+/* Textarea */
+.form_textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #194f1b;
+  border-radius: 10px;
+  font-size: 14px;
+  background: white;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form_textarea:focus {
+  outline: none;
+  border-color: #194f1b;
+  box-shadow: 0 0 0 3px rgba(245, 98, 122, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Submit Button */
+.submit_btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #194f1b, #1f7622);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit_btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(245, 98, 122, 0.4);
+}
+
+.submit_btn:active {
+  transform: translateY(-1px);
+}
+
+.submit_btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.submit_btn:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
+  }
+}
+
+/* Success Message */
+.form_success {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05));
+  border: 2px solid rgba(76, 175, 80, 0.3);
+  border-radius: 10px;
+  color: #4caf50;
+  font-weight: 600;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .join_form {
+    width: 95%;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .form_title {
+    font-size: 28px;
+  }
+
+  .radio_group {
+    gap: 8px;
+  }
+
+  .radio_label {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Animation cho form */
+.join_form {
+  animation: slideInUp 0.8s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Thêm vào App.css */
+.form_error {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(135deg, rgba(244, 67, 54, 0.1), rgba(244, 67, 54, 0.05));
+  border: 2px solid rgba(244, 67, 54, 0.3);
+  border-radius: 10px;
+  color: #f44336;
+  font-weight: 600;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.submit_btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.submit_btn:disabled:hover {
+  box-shadow: none !important;
+}
+
+@media (min-width: 1024px) {
+
+  .App {
+    width: 40% !important;
+    margin: 0px auto;
+  }
+
+  .single_img {
+    height: 800px !important;
+  }
+
+  .single_img img {
+    height: 800px !important;
+  }
+
+
+  .two_img {
+    height: 400px;
+  }
+
+  .two_img img {
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+
+  .App {
+    width: 60%;
+    margin: 0px auto;
+  }
+
+}
+
+@media (min-width: 420px) {
+
+
+  .single_img {
+    height: 600px;
+  }
+
+  .single_img img {
+    height: 600px;
+  }
+}
+
+/* Thêm vào cuối App.css */
+
+
+@keyframes borderGlow {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Petal fall animation */
+.top_content::after {
+  content: "❀❀❀";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  animation: petalFall 10s linear infinite;
+  text-align: center;
+  z-index: 1;
+}
+
+@keyframes petalFall {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Popup animation */
+@keyframes popupAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Gift button styles */
+.gift-button {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #194f1b, #207b23);
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(245, 98, 122, 0.3);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.gift-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(245, 98, 122, 0.5);
+}
+
+/* Responsive cho popup */
+@media (max-width: 768px) {
+  .qr-popup-content {
+    width: 95% !important;
+    padding: 20px !important;
+  }
+
+  .qr-popup-content div {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  animation: slideUp 0.3s ease;
+  position: relative;
+}
+
+.popup-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.popup-icon.success {
+  color: #4CAF50;
+}
+
+.popup-icon.error {
+  color: #f44336;
+}
+
+.popup-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.popup-message {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.popup-close-btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  background-color: transparent;
+}
+
+.popup-close-btn:hover {
+  background: #194f1b;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form_select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #194f1b;
+  ;
+  border-radius: 10px;
+  font-size: 16px;
+  background: white;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form_select:focus {
+  outline: none;
+  border-color: #194f1b;
+  box-shadow: 0 0 0 3px rgba(25, 79, 27, 0.1);
+}
+
+.form_select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+@media (max-width:768px){
+  .top_content{
+    height: 667px !important;
   }
 }
