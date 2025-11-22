@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/ThiepCuoi/static/css/main.fc9bdd4d.css",
-    "main.js": "/ThiepCuoi/static/js/main.1ad08509.js",
+    "main.css": "/ThiepCuoi/static/css/main.a822c958.css",
+    "main.js": "/ThiepCuoi/static/js/main.a500a2f8.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
     "static/media/ido2.mp3": "/ThiepCuoi/static/media/ido2.3c6d791089386f3ef7f5.mp3",
     "static/media/gif.gif": "/ThiepCuoi/static/media/gif.d2d231d8b86b533b4db0.gif",
     "static/media/sen.avif": "/ThiepCuoi/static/media/sen.4db388213963f9c51cb3.avif",
     "static/media/anhcuoi2.jpg": "/ThiepCuoi/static/media/anhcuoi2.d44bc42b99f17c0ddca6.jpg",
-    "static/media/ac9.avif": "/ThiepCuoi/static/media/ac9.eeb3c76df01cbd7069a5.avif",
     "static/media/SITKA.TTC": "/ThiepCuoi/static/media/SITKA.e9150d1b53f52616c85d.TTC",
     "static/media/ac7.avif": "/ThiepCuoi/static/media/ac7.eee17980d474cbb12f29.avif",
-    "static/media/ac6.avif": "/ThiepCuoi/static/media/ac6.ec035c5af70062cd8fe3.avif",
-    "static/media/ac4.avif": "/ThiepCuoi/static/media/ac4.ca571f2735519fc01691.avif",
     "static/media/anhcuoi3.jpg": "/ThiepCuoi/static/media/anhcuoi3.963758afb8118ab2b0d8.jpg",
     "static/media/ac8.avif": "/ThiepCuoi/static/media/ac8.688e7b3177a41528a0aa.avif",
     "static/media/anhxn.avif": "/ThiepCuoi/static/media/anhxn.a70ac328839a7d91c017.avif",
     "static/media/ac10.avif": "/ThiepCuoi/static/media/ac10.6913809c15102e48875a.avif",
-    "static/media/ac5.avif": "/ThiepCuoi/static/media/ac5.6a545977c3bd211c691a.avif",
     "static/media/couple.png": "/ThiepCuoi/static/media/couple.6225a7fe55c8cc011c6c.png",
     "static/media/font2.TTF": "/ThiepCuoi/static/media/font2.447c312d32f8074fa186.TTF",
     "static/media/ac11.avif": "/ThiepCuoi/static/media/ac11.da5e72f66027f8f70d00.avif",
+    "static/media/VL-MICHELIA.TTF": "/ThiepCuoi/static/media/VL-MICHELIA.e3218912b508f3f0f30d.TTF",
+    "static/media/TUV-NOH-CARBONE.TTF": "/ThiepCuoi/static/media/TUV-NOH-CARBONE.99e9d4c5ede8bd38af98.TTF",
     "static/media/[TIS] HLNETCO1_0.TTF": "/ThiepCuoi/static/media/[TIS] HLNETCO1_0.574fc7f4665173bca903.TTF",
     "static/media/[TIS] HAND BOYS.TTF": "/ThiepCuoi/static/media/[TIS] HAND BOYS.1dda1d253232b15ac779.TTF",
     "static/media/qr1.jpg": "/ThiepCuoi/static/media/qr1.b26d75b4792a76a90ce3.jpg",
+    "static/media/KD-MOON-LIGHT.TTF": "/ThiepCuoi/static/media/KD-MOON-LIGHT.8e1259c328b4d738071a.TTF",
     "static/media/SVN-RUSHTICK.OTF": "/ThiepCuoi/static/media/SVN-RUSHTICK.90fc64cdfceb525213f6.OTF",
     "static/media/LNTH-Adelia.ttf": "/ThiepCuoi/static/media/LNTH-Adelia.b4e120be9bdd12a01312.ttf",
     "static/media/nentruc1.avif": "/ThiepCuoi/static/media/nentruc1.bb37e706de9c398b55de.avif",
@@ -37,12 +36,12 @@
     "static/media/BeautiqueDisplay-BlackItalic.otf": "/ThiepCuoi/static/media/BeautiqueDisplay-BlackItalic.34c5dc2f934777c94366.otf",
     "static/media/khung.avif": "/ThiepCuoi/static/media/khung.2427416dbf2346753d2b.avif",
     "index.html": "/ThiepCuoi/index.html",
-    "main.fc9bdd4d.css.map": "/ThiepCuoi/static/css/main.fc9bdd4d.css.map",
-    "main.1ad08509.js.map": "/ThiepCuoi/static/js/main.1ad08509.js.map",
+    "main.a822c958.css.map": "/ThiepCuoi/static/css/main.a822c958.css.map",
+    "main.a500a2f8.js.map": "/ThiepCuoi/static/js/main.a500a2f8.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc9bdd4d.css",
-    "static/js/main.1ad08509.js"
+    "static/css/main.a822c958.css",
+    "static/js/main.a500a2f8.js"
   ]
 }
