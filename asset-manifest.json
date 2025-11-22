@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ThiepCuoi/static/css/main.278e0a50.css",
-    "main.js": "/ThiepCuoi/static/js/main.d6cebad2.js",
+    "main.css": "/ThiepCuoi/static/css/main.fc9bdd4d.css",
+    "main.js": "/ThiepCuoi/static/js/main.1ad08509.js",
     "static/js/453.0aa81761.chunk.js": "/ThiepCuoi/static/js/453.0aa81761.chunk.js",
     "static/media/ido2.mp3": "/ThiepCuoi/static/media/ido2.3c6d791089386f3ef7f5.mp3",
     "static/media/gif.gif": "/ThiepCuoi/static/media/gif.d2d231d8b86b533b4db0.gif",
@@ -17,6 +17,7 @@
     "static/media/anhxn.avif": "/ThiepCuoi/static/media/anhxn.a70ac328839a7d91c017.avif",
     "static/media/ac10.avif": "/ThiepCuoi/static/media/ac10.6913809c15102e48875a.avif",
     "static/media/ac5.avif": "/ThiepCuoi/static/media/ac5.6a545977c3bd211c691a.avif",
+    "static/media/couple.png": "/ThiepCuoi/static/media/couple.6225a7fe55c8cc011c6c.png",
     "static/media/font2.TTF": "/ThiepCuoi/static/media/font2.447c312d32f8074fa186.TTF",
     "static/media/ac11.avif": "/ThiepCuoi/static/media/ac11.da5e72f66027f8f70d00.avif",
     "static/media/[TIS] HLNETCO1_0.TTF": "/ThiepCuoi/static/media/[TIS] HLNETCO1_0.574fc7f4665173bca903.TTF",
@@ -30,17 +31,18 @@
     "static/media/Fz Alpha Brights.otf": "/ThiepCuoi/static/media/Fz Alpha Brights.72274f3cb8349a592b66.otf",
     "static/media/ITCEDSCR.TTF": "/ThiepCuoi/static/media/ITCEDSCR.bf7838a6543a08923c39.TTF",
     "static/media/nentruc2.avif": "/ThiepCuoi/static/media/nentruc2.b0435a70076d1e125582.avif",
+    "static/media/chuhy1.png": "/ThiepCuoi/static/media/chuhy1.bc77a8e8a2c147282b4f.png",
     "static/media/heart1.avif": "/ThiepCuoi/static/media/heart1.f4e7f9da0301cbe68267.avif",
     "static/media/nhan.png": "/ThiepCuoi/static/media/nhan.760d61d8c0d889b917a6.png",
     "static/media/BeautiqueDisplay-BlackItalic.otf": "/ThiepCuoi/static/media/BeautiqueDisplay-BlackItalic.34c5dc2f934777c94366.otf",
     "static/media/khung.avif": "/ThiepCuoi/static/media/khung.2427416dbf2346753d2b.avif",
     "index.html": "/ThiepCuoi/index.html",
-    "main.278e0a50.css.map": "/ThiepCuoi/static/css/main.278e0a50.css.map",
-    "main.d6cebad2.js.map": "/ThiepCuoi/static/js/main.d6cebad2.js.map",
+    "main.fc9bdd4d.css.map": "/ThiepCuoi/static/css/main.fc9bdd4d.css.map",
+    "main.1ad08509.js.map": "/ThiepCuoi/static/js/main.1ad08509.js.map",
     "453.0aa81761.chunk.js.map": "/ThiepCuoi/static/js/453.0aa81761.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.278e0a50.css",
-    "static/js/main.d6cebad2.js"
+    "static/css/main.fc9bdd4d.css",
+    "static/js/main.1ad08509.js"
   ]
 }
