@@ -553,7 +553,7 @@ function WeddingInvitation() {
                 padding: "15px",
                 borderRadius: "15px",
                 margin: "15px 0",
-                width: "80%"
+                width: "100%"
               }}>
                 <span style={{ color: "color: #194f1b;", fontWeight: "500" }}>Bữa tiệc thân mật</span>
                 <div style={{
@@ -563,7 +563,11 @@ function WeddingInvitation() {
                   marginTop: "10px",
                 }}>
                   <span style={{ color: "#666" }}>Nhà trai:</span>
-                  <span style={{ fontWeight: "600", color: "color: #194f1b;" }}>18h30</span>
+                  <div>
+                        <span style={{ fontWeight: "600", color: "color: #194f1b;" }}>18h30 29.11.2025</span><br></br>
+                        <span style={{ fontWeight: "600",fontSize: "14px", color: "color: #194f1b;" }}>(Tức ngày 10 tháng 10 năm Ất Tỵ)</span>
+                  </div>
+                  
                 </div>
                 <div style={{
                   display: "flex",
@@ -572,12 +576,16 @@ function WeddingInvitation() {
                   marginTop: "10px",
                 }}>
                   <span style={{ color: "#666" }}>Nhà gái:</span>
-                  <span style={{ fontWeight: "600", color: "color: #194f1b;" }}>17h30</span>
+                  <div>
+                      <span style={{ fontWeight: "600", color: "color: #194f1b;" }}>17h30 29.11.2025</span><br/>
+                      <span style={{ fontWeight: "600",fontSize: "14px", color: "color: #194f1b;" }}>(Tức ngày 10 tháng 10 năm Ất Tỵ)</span><br/>
+                  </div>
+                  
                 </div>
               </div>
 
-              <span style={{ fontWeight: "600", color: "color: #194f1b;", margin: "5px 0" }}>29.11.2025</span>
-              <span style={{ color: "#E9B7A7", fontSize: "14px", zIndex: 2 }}>( Tức ngày 10 tháng 10 năm Ất Tỵ )</span>
+              {/* <span style={{ fontWeight: "600", color: "color: #194f1b;", margin: "5px 0" }}>29.11.2025</span>
+              <span style={{ color: "#E9B7A7", fontSize: "14px", zIndex: 2 }}>( Tức ngày 10 tháng 10 năm Ất Tỵ )</span> */}
             </div>
           </div>
 
