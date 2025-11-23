@@ -1422,3 +1422,9 @@ body {
     height: 667px !important;
   }
 }
+
+@media (max-width:1024px){
+  .top_content{
+    height: 667px !important;
+  }
+}

@@ -588,7 +588,7 @@ function WeddingInvitation() {
             <span style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>Thôn Lê Lợi, xã Chí Minh, tỉnh Hưng Yên</span>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.7025590543262!2d105.98948611079233!3d20.762846496778828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135b9f9d9be5fb3%3A0x96957b4b1816e166!2zTmjDoCB2xINuIGjDs2EgdGjDtG4gTMOqIEzhu6Np!5e0!3m2!1svi!2s!4v1763147040731!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3730.676700426822!2d105.9892820752494!3d20.763893980819976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQ1JzUwLjAiTiAxMDXCsDU5JzMwLjciRQ!5e0!3m2!1svi!2s!4v1763884036227!5m2!1svi!2s"
               width="85%"
               height="250"
               style={{
@@ -604,7 +604,7 @@ function WeddingInvitation() {
             />
 
             <a
-              href='https://www.google.com/maps/place/Nh%C3%A0+v%C4%83n+h%C3%B3a+th%C3%B4n+L%C3%AA+L%E1%BB%A3i/@20.7628415,105.9920664,17z/data=!3m1!4b1!4m6!3m5!1s0x3135b9f9d9be5fb3:0x96957b4b1816e166!8m2!3d20.7628415!4d105.9920664!16s%2Fg%2F11rgdk1tlg?entry=ttu&g_ep=EgoyMDI5MTExMS4wIKXMDSoJLDEwMDEmSAFQAw%3D%3D'
+              href='https://www.google.com/maps/dir/?api=1&destination=20.76389398,105.98928207'
               target='_blank'
               rel="noopener noreferrer"
               style={{
@@ -1005,9 +1005,9 @@ function WeddingInvitation() {
           </div>
 
           {/* Kết thúc */}
-          <div className='ending fade-in-scroll'>
-            <span style={{ fontSize: "36px" }}>Thank You</span>
-            <span style={{ fontSize: "20px", marginTop: "10px" }}>Rất hân hạnh được đón tiếp</span>
+          <div className='ending fade-in-scroll' style={{marginTop:"10px"}}>
+            <span style={{ fontSize: "36px",fontFamily:"MyFont11" }} >Thank You</span>
+            <span style={{ fontSize: "20px", marginTop: "10px",fontFamily:"MyFont8" }}>Rất hân hạnh được đón tiếp</span>
           </div>
         </div>
         <audio ref={audioRef} src={audioFile} preload="metadata" loop />
