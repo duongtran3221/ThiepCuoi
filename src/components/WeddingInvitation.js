@@ -30,7 +30,7 @@ import { FaHeart, FaGift } from "react-icons/fa6";
 import { submitConfirmation } from "../services/weddingService";
 const ac4 = 'https://res.cloudinary.com/drbz5lbah/image/upload/v1763823071/%E1%BA%A3nh_c%C6%B0%E1%BB%9Bi_4_nu4e5u.jpg'
 const ac5 = 'https://res.cloudinary.com/drbz5lbah/image/upload/v1763823308/%E1%BA%A3nh_c%C6%B0%E1%BB%9Bi_5_xzsgqi.jpg'
-const ac6 = 'https://res.cloudinary.com/drbz5lbah/image/upload/v1763823071/%E1%BA%A3nh_c%C6%B0%E1%BB%9Bi_4_nu4e5u.jpg'
+const ac6 = 'https://res.cloudinary.com/drbz5lbah/image/upload/v1763885191/%E1%BA%A3nh_6_ly8lj7.jpg'
 const ac9 = 'https://res.cloudinary.com/drbz5lbah/image/upload/v1763822575/%E1%BA%A3nh9_uiwynu.jpg'
 function WeddingInvitation() {
   const [showQRPopup, setShowQRPopup] = useState(false);
