@@ -585,7 +585,7 @@ function WeddingInvitation() {
           <div className='location fade-in-scroll'>
             <span style={{ fontSize: "24px", fontWeight: "600", color: "#194f1b", marginBottom: "15px" }}>Địa điểm tổ chức</span>
             <span style={{ fontSize: "20px", fontWeight: "600", color: "#194f1b", marginBottom: "15px" }}>Nhà trai</span>
-            <span style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>Thôn Lê Lợi, xã Chí Minh, tỉnh Hưng Yên</span>
+            <span style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>Thôn Lê Lợi, Xã Chí Minh, tỉnh Hưng Yên</span>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3730.676700426822!2d105.9892820752494!3d20.763893980819976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQ1JzUwLjAiTiAxMDXCsDU5JzMwLjciRQ!5e0!3m2!1svi!2s!4v1763884036227!5m2!1svi!2s"
@@ -628,7 +628,7 @@ function WeddingInvitation() {
               Xem chỉ đường
             </a>
             <span style={{ fontSize: "20px", fontWeight: "600", color: "#194f1b", marginBottom: "15px", marginTop: "15px" }}>Nhà gái</span>
-            <span style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>Thôn Ngọc Nha Thượng, Xã Khoái Châu, Hưng Yên</span>
+            <span style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>Thôn Ngọc Nha Thượng, Xã Khoái Châu, tỉnh Hưng Yên</span>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3729.7385006106556!2d105.9846061752504!3d20.80186458079131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQ4JzA2LjciTiAxMDXCsDU5JzEzLjkiRQ!5e0!3m2!1svi!2s!4v1763656338816!5m2!1svi!2s"
