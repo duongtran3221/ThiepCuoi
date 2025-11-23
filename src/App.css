@@ -543,8 +543,9 @@ body {
 
 .single_img {
   width: 95%;
-  height: 500px;
-  margin: 20px auto;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  margin: 0px auto;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -553,16 +554,15 @@ body {
 
 
 .single_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
   transition: transform 0.5s ease;
 }
 
 
 .two_img {
   width: 90%;
-  height: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -572,11 +572,14 @@ body {
 
 .two_img img {
   width: 48%;
-  height: 100%;
+  aspect-ratio: 2/3;   /* hoặc 4/5, 2/3 tuỳ bạn muốn dạng ảnh */
+  height: auto;
+  object-fit: cover;   /* phóng to & cắt theo đúng khung */
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
 }
+
 
 
 .ending {
@@ -1319,7 +1322,6 @@ body {
 
 .popup-content {
   background: white;
-  padding: 30px;
   text-align: center;
   max-width: 400px;
   width: 100%;

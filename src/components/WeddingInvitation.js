@@ -563,7 +563,7 @@ function WeddingInvitation() {
                   marginTop: "10px",
                 }}>
                   <span style={{ color: "#666" }}>Nhà trai:</span>
-                  <span style={{ fontWeight: "600", color: "color: #194f1b;" }}>18h00</span>
+                  <span style={{ fontWeight: "600", color: "color: #194f1b;" }}>18h30</span>
                 </div>
                 <div style={{
                   display: "flex",
@@ -680,18 +680,15 @@ function WeddingInvitation() {
             {submitStatus && (
               <div className={`popup-overlay ${submitStatus}`}>
                 <div className="popup-content">
-                  {/* <div className={`popup-icon ${submitStatus}`}>
-                    {submitStatus === 'success' ? '✓' :
-                      submitStatus === 'error' ? '✕' : '!'}
-                  </div> */}
-                  {/* <h3 className="popup-title">
-                    {submitStatus === 'success'
-                      ? 'Thành công!'
-                      : submitStatus === 'error'
-                        ? 'Có lỗi xảy ra'
-                        : 'Thông báo'}
-                  </h3> */}
-                  <img src={anhxn} style={{ width: "90%", height: "200px" }}></img>
+                  <img
+                    src={anhxn}
+                    style={{
+                      width: "100%",
+                      aspectRatio: "3/2",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
+                  />
                   <p style={{ fontSize: "14px" }}>Cảm ơn bạn đã dành thời gian phản hồi.</p>
                   <p style={{ fontSize: "14px" }}>Chúng mình vô cùng trân quý sự quan tâm của bạn!</p>
 
@@ -909,6 +906,12 @@ function WeddingInvitation() {
 
                   {/* QR 2 */}
                   <div style={{ textAlign: "center", display: "flex", flexDirection: "row", width: "100%" }}>
+                    
+                    <div style={{ display: "flex", flex: 1, flexDirection: "column", float: "left", height: "100px", padding: 5 }}>
+                      <span style={{ fontSize: "16px", color: "#194f1b", fontWeight: "600" }}>Đinh Nguyễn Mai Liên</span>
+                      <span style={{ fontSize: "14px", color: "#194f1b" }}>Techcombank</span>
+                      <span style={{ fontSize: "14px", color: "#194f1b" }}>19074084147014</span>
+                    </div>
                     <div style={{
                       width: "100px",
                       height: "100px",
@@ -923,11 +926,6 @@ function WeddingInvitation() {
                     }}>
 
                       <img src={qr2} alt="QR 2" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                    </div>
-                    <div style={{ display: "flex", flex: 1, flexDirection: "column", float: "left", height: "100px", padding: 5 }}>
-                      <span style={{ fontSize: "16px", color: "#194f1b", fontWeight: "600" }}>Đinh Nguyễn Mai Liên</span>
-                      <span style={{ fontSize: "14px", color: "#194f1b" }}>Techcombank</span>
-                      <span style={{ fontSize: "14px", color: "#194f1b" }}>19074084147014</span>
                     </div>
                   </div>
                 </div>
